@@ -13,11 +13,11 @@ class BMICalculator : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bmicalculator)
 
-        threadBMI()
+        threadAndHandlerBMI()
 
     }
 
-    fun threadBMI(){
+    fun threadAndHandlerBMI(){
 
         val han = object  : Handler(Looper.getMainLooper()){
             override fun handleMessage(msg: Message) {
