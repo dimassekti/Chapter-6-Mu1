@@ -6,6 +6,8 @@
         <entry key="..\:/Android Project/ChapterEnamMu1/app/src/main/res/layout/activity_bmicalculator.xml" value="0.26262626262626265" />
         <entry key="..\:/Android Project/ChapterEnamMu1/app/src/main/res/layout/activity_hitung_umur.xml" value="0.20416666666666666" />
         <entry key="..\:/Android Project/ChapterEnamMu1/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android Project/ChapterEnamMu1/app/src/main/res/layout/activity_main_async_task.xml" value="0.18659420289855072" />
+        <entry key="..\:/Android Project/ChapterEnamMu1/app/src/main/res/layout/activity_main_coroutines.xml" value="0.18659420289855072" />
       </map>
     </option>
   </component>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pertamabmi.BMICalculator">
+    tools:context=".kedua.asynctask.MainAsyncTask">
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -39,5 +40,7 @@
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
+
+
 
 </RelativeLayout>

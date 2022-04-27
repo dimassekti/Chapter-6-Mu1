@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChapterEnamMu1">
         <activity
+            android:name=".kedua.coroutines.MainCoroutines"
+            android:exported="false" />
+        <activity
+            android:name=".kedua.asynctask.MainAsyncTask"
+            android:exported="false" />
+        <activity
             android:name=".pertamabmi.BMICalculator"
             android:exported="false" />
         <activity

@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
+import com.coufie.chapterenammu1.kedua.asynctask.MainAsyncTask
+import com.coufie.chapterenammu1.kedua.coroutines.MainCoroutines
 import com.coufie.chapterenammu1.pertama.HitungUmur
 import com.coufie.chapterenammu1.pertamabmi.BMICalculator
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,6 +29,16 @@ class MainActivity : AppCompatActivity() {
 
         btn_htgbmi.setOnClickListener {
             startActivity(Intent(this, BMICalculator::class.java))
+
+        }
+
+        btn_duaasync.setOnClickListener {
+            startActivity(Intent(this, MainAsyncTask::class.java))
+
+        }
+
+        btn_duacoroutines.setOnClickListener {
+            startActivity(Intent(this, MainCoroutines::class.java))
 
         }
 

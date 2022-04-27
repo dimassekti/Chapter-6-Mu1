@@ -24,21 +24,36 @@
             android:layout_height="wrap_content"/>
 
         <Button
+            android:visibility="gone"
             android:id="@+id/btnChange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/btn_htgumur"
-            android:text="hitung umur"
+            android:text="1. hitung umur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/btn_htgbmi"
-            android:text="hitung BMI"
+            android:text="1. hitung BMI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_duaasync"
+            android:text="2. async bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_duacoroutines"
+            android:text="2. coroutines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
     </LinearLayout>
 
 
