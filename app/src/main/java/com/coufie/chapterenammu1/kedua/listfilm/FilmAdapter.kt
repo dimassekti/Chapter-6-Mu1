@@ -10,7 +10,7 @@ import com.coufie.chapterenammu1.R
 import kotlinx.android.synthetic.main.item_film.view.*
 
 
-class FilmAdapter(private var onClick: (GetFilmDataItem)->Unit) : RecyclerView.Adapter<FilmAdapter.ViewHolder>() {
+class FilmAdapter : RecyclerView.Adapter<FilmAdapter.ViewHolder>() {
 
     private var dataFilmLFA : List<GetFilmDataItem>? = null
 
@@ -39,9 +39,6 @@ class FilmAdapter(private var onClick: (GetFilmDataItem)->Unit) : RecyclerView.A
             Glide.with(holder.itemView.context).load(dataFilmLFA!![position].image).into(holder.itemView.iv_image)
         }
 
-        holder.itemView.cardFilm.setOnClickListener{
-            onClick(dataFilmLFA!![position])
-        }
     }
 
     override fun getItemCount(): Int {
