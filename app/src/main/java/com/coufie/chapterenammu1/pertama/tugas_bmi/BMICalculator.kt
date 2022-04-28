@@ -1,4 +1,4 @@
-package com.coufie.chapterenammu1.pertamabmi
+package com.coufie.chapterenammu1.pertama.tugas_bmi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

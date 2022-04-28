@@ -1,8 +1,9 @@
-package com.coufie.chapterenammu1.kedua.listfilm
+package com.coufie.chapterenammu1.kedua.listfilm_asynctask.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.coufie.challengechapterfive.model.GetFilmDataItem
+import com.coufie.chapterenammu1.kedua.listfilm_asynctask.model.GetFilmDataItem
+import com.coufie.chapterenammu1.kedua.listfilm_asynctask.network.ApiClient
 import retrofit2.Call
 import retrofit2.Response
 

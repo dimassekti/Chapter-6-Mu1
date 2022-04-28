@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kedua.coroutines.MainCoroutines">
+    tools:context=".kedua.cthcoroutines.MainCoroutines">
 
     <LinearLayout
         android:orientation="vertical"
@@ -14,6 +14,26 @@
         <TextView
             android:id="@+id/tv_satuu"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/beratt"
+            android:hint="berat"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/tinggii"
+            android:hint="tinggi"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnhitungg"
+            android:text="hitung"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>

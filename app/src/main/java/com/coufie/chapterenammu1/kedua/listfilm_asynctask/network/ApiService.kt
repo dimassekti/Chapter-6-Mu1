@@ -1,6 +1,6 @@
-package com.coufie.chapterenammu1.kedua.listfilm
+package com.coufie.chapterenammu1.kedua.listfilm_asynctask.network
 
-import com.coufie.challengechapterfive.model.GetFilmDataItem
+import com.coufie.chapterenammu1.kedua.listfilm_asynctask.model.GetFilmDataItem
 import retrofit2.Call
 import retrofit2.http.GET
 

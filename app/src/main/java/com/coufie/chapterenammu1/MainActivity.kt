@@ -6,11 +6,12 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import com.coufie.chapterenammu1.kedua.asynctask.MainAsyncTask
-import com.coufie.chapterenammu1.kedua.coroutines.MainCoroutines
-import com.coufie.chapterenammu1.kedua.listfilm.FilmActivity
+import com.coufie.chapterenammu1.kedua.cthasynctask.MainAsyncTask
+import com.coufie.chapterenammu1.kedua.cthcoroutines.MainCoroutines
+import com.coufie.chapterenammu1.kedua.listfilm_asynctask.FilmActivity
+import com.coufie.chapterenammu1.ketiga.cthservice.MainService
 import com.coufie.chapterenammu1.pertama.HitungUmur
-import com.coufie.chapterenammu1.pertamabmi.BMICalculator
+import com.coufie.chapterenammu1.pertama.tugas_bmi.BMICalculator
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -45,6 +46,11 @@ class MainActivity : AppCompatActivity() {
 
         btn_listfilm.setOnClickListener {
             startActivity(Intent(this, FilmActivity::class.java))
+
+        }
+
+        btntigaservice.setOnClickListener {
+            startActivity(Intent(this, MainService::class.java))
 
         }
 

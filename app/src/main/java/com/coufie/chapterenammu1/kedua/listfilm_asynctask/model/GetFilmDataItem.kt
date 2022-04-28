@@ -1,4 +1,4 @@
-package com.coufie.challengechapterfive.model
+package com.coufie.chapterenammu1.kedua.listfilm_asynctask.model
 
 
 import android.os.Parcelable

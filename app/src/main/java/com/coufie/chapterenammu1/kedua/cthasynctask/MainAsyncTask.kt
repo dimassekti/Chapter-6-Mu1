@@ -1,8 +1,7 @@
-package com.coufie.chapterenammu1.kedua.asynctask
+package com.coufie.chapterenammu1.kedua.cthasynctask
 
 import android.app.ProgressDialog
 import android.content.Context
-import android.content.QuickViewConstants
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
