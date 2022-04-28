@@ -14,49 +14,42 @@ import kotlinx.android.synthetic.main.activity_film.*
 class FilmActivity : AppCompatActivity() {
 
     lateinit var adapterfilm : FilmAdapter
-    lateinit var dataFilm : List<GetFilmDataItem>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_film)
 
-        initRecycler()
-        getDataFilm()
+//        initRecycler()
+//        getDataFilm()
 
-//        asyncFilm()
+        asyncFilm().execute()
 
     }
 
-    inner class asyncFilm : AsyncTask<Int, Void, List<GetFilmDataItem>?>(){
+    inner class asyncFilm : AsyncTask<Void, Void, Void>(){
 
         override fun onPreExecute() {
             super.onPreExecute()
         }
 
-        override fun doInBackground(vararg p0: Int?): List<GetFilmDataItem>? {
-            getDataFilm()
-            return dataFilm
+        override fun doInBackground(vararg p0: Void?): Void? {
+            initRecycler()
+            return null
         }
-
-
 
         override fun onProgressUpdate(vararg values: Void?) {
             super.onProgressUpdate(*values)
         }
-
-        override fun onPostExecute(result: List<GetFilmDataItem>?) {
+        override fun onPostExecute(result: Void?) {
             super.onPostExecute(result)
-
-            initRecycler()
+            getDataFilm()
         }
-
     }
 
     fun initRecycler(){
 
-        adapterfilm = FilmAdapter()
-
         rv_film.layoutManager = LinearLayoutManager(this)
+        adapterfilm = FilmAdapter()
         rv_film.adapter = adapterfilm
 
 
